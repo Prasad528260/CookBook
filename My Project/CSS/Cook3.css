@@ -261,7 +261,7 @@ main .three-img
 }
 .categories .cat
 {
-    font-size: 28px;
+    font-size:30px;
 }
 .categories .center-cat
 {
@@ -324,3 +324,25 @@ main .three-img
 
 }
 /* ** END OF CATEGORIES */
+
+
+/* ** TRENDING SECTION  */
+
+.container .trends .sq
+{
+    width:200px;
+    height: auto;
+    aspect-ratio: 1;
+
+}
+.container .section-heading
+{
+    margin-top: 60px;
+    font-size: 30px;
+    
+}
+.container
+{
+    width:80%;
+}
+/* ** END TRENDING SECTION  */
