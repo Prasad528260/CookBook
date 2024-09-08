@@ -1,14 +1,19 @@
-* {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
     padding: 0;
     margin: 0;
 
 }
 
 :root {
-    --main-color: #6f5651;
-    --supporting-color: #ebf3fe;
+    --main-color: #785740;
+    --supporting-color: #FEECB3;
     --link-color: #755959;
-    --bg-color: #f8f2f2;
+    --bg-color: #FABC3F;
     --h-color: #003b99;
     --mini-heading-color: #000a19;
     --white-color: #fff;
@@ -44,11 +49,13 @@ header {
 }
 
 .container {
-    max-width: 300rem;
+    max-width: 100%;
     margin: 0 auto;
 
 
+
 }
+
 
 .container .logo {
     width: 30rem;
@@ -63,7 +70,7 @@ header {
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #ded8ce;
+    color: var(--supporting-color);
     align-content: space-evenly;
     text-align: justify;
     padding-left: 1rem;
@@ -85,7 +92,7 @@ header {
     font-size: 2rem;
     text-transform: uppercase;
     list-style: none;
-    color: #ebe7e1;
+    color: var(--supporting-color);
 
 
     & li a {
@@ -95,7 +102,7 @@ header {
         &::before {
             content: "";
             position: absolute;
-            border-bottom: 0.35rem solid white;
+            border-bottom: 0.35rem solid var(--supporting-color);
             bottom: -8px;
             width: 0%;
             left: 0;
@@ -152,3 +159,168 @@ header {
 
 
 /* *****END CONTENT AFTER NAVBAR */
+
+
+/* ** START THREE IMG */
+
+main .three-img
+{
+    
+  display: grid;
+  place-items: center;
+  background-color: var(--supporting-color);
+ 
+}
+
+.images
+{
+    width: 60%;
+}
+.images3
+{
+    position:relative;
+}
+.three{
+    & .s1
+    {
+        position: absolute;
+        left: 10%;
+        bottom: 7%;
+        text-transform: capitalize;
+    }
+    & .s2
+    {
+        position: absolute;
+        left:  47%;
+        bottom: 7%;
+        text-transform: capitalize;
+    }
+    & .s3
+    {
+        position: absolute;
+        left: 86%;
+        bottom: 7%;
+        text-transform: capitalize;
+    }
+   
+    &.img31::before {
+        
+        position:absolute;
+        content: "";
+        border-bottom: 2rem solid var(--bg-color);
+        width: 20%;
+        bottom: 6%;
+        left: 2.5%;
+        
+
+       
+    }
+    &.img32::before {
+        
+        position:absolute;
+        content: "";
+        border-bottom: 2rem solid var(--bg-color);
+        width: 20%;
+        bottom: 6%;
+        left: 40%;
+
+       
+    }
+
+    &.img33::before {
+        
+        position:absolute;
+        content: "";
+        border-bottom: 2rem solid var(--bg-color);
+        width: 20%;
+        bottom: 6%;
+        left: 78%;
+
+       
+    }
+
+
+}
+
+/* ** end THREE IMG */
+
+
+
+/* **** START OF CATEGORIES  */
+
+.categories .cat-round
+{
+    width: 15rem;
+    height: auto;
+    aspect-ratio: 1;
+    margin-bottom: 3rem;
+}
+.categories .container-cat
+{
+    width: 80%;
+}
+.categories .cat
+{
+    font-size: 28px;
+}
+.categories .center-cat
+{
+    position: relative;
+}
+.categories .center-cat .rounded-full
+{
+    margin-bottom: 50px;
+    font-size: 16px;
+    padding: 5px;
+    &.c1::after
+    {
+        content: "cat1";
+        position: absolute;
+        bottom:57% ;
+        left: 14.8%;
+        
+    }
+    &.c2::after
+    {
+        content: "cat1";
+        position: absolute;
+        bottom:57% ;
+        left:48%;
+        
+    }
+    &.c3::after
+    {
+        content: "cat1";
+        position: absolute;
+        bottom:57% ;
+        left: 82%;
+        
+    }
+    &.c4::after
+    {
+        content: "cat1";
+        position: absolute;
+        bottom:5% ;
+        left: 14.8%;
+        
+    }
+    &.c5::after
+    {
+        content: "cat1";
+        position: absolute;
+        bottom:5% ;
+        left:48%;
+        
+    }
+    &.c6::after
+    {
+        content: "cat1";
+        position: absolute;
+        bottom:5% ;
+        left: 82%;
+        
+    }
+   
+
+}
+/* ** END OF CATEGORIES */
