@@ -338,32 +338,39 @@ main .three-img
 
 
 /* **** START OF CATEGORIES  */
-
+.categories
+{
+    background-color: #e4e2e2;
+}
 .categories .cat-round
 {
     width: 15rem;
     height: auto;
     aspect-ratio: 1;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 .categories .container-cat
 {
     width: 80%;
-}
-.categories .cat
-{
-    font-size:40px;
-    font-family: "Poppins", sans-serif;
-  font-weight:500;
-  font-style: normal;
-  letter-spacing: 2px;
-  /* background-color: var(--supporting-color); */
-  & .section-heading
-  {
     
-    background-color: var(--supporting-color);
-    border-radius: 50px;
-  }
+}
+main .cate-heading 
+{
+    margin-top: 60%px;
+    margin-bottom: -20px;
+    & .section-heading
+    {
+
+        font-size:40px;
+        font-family: "Poppins", sans-serif;
+        font-weight:500;
+        font-style: normal;
+        letter-spacing: 2px;
+        background-color: var(--supporting-color);
+        padding: 2rem;
+        color: #fff;
+        
+    }
 
 
 }
@@ -478,30 +485,91 @@ main .three-img
 
 /* ** TRENDING SECTION  */
 
-.container .trends .sq
+/* Basic Styles */
+.trending
 {
-    width:200px;
-    height: auto;
-    aspect-ratio: 1;
-
-}
-.container .section-heading
-{
-    margin-top:13rem;
-    font-size: 40px;
-    font-family: "Poppins", sans-serif;
-
+    color: white;
+    background-color: var(--supporting-color);
+    height: 8rem;
+   padding-top: 10px;
  
+   
+}
+.container5 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem 0;
     
-}
-.container .trends
-{
-    margin: -8rem;
-}
-.container
-{
-    width:80%;
-}
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: auto;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .card-title {
+    font-size: 3.5rem;
+    color: var(--supporting-color);
+    margin-bottom: 4rem;
+    margin-top: 10px;
+  }
+  
+  .card-para {
+    font-size: 2rem;
+    
+    color: #333;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    font-weight: 500;
+  }
+  
+  .card .btn {
+    background-color: var(--supporting-color); 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+   margin-top:2rem;
+    transition: all 0.3s ease;
+    font-size: 1.9rem;
+  }
+  
+  .btn:hover {
+    background-color: var(--supporting-color);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card:hover .card-title {
+    transform: scale(1.2);
+    color: var(--supporting-color)
+  }
+  
+  .card:hover .btn {
+    background-color: var(--supporting-color)
+  }
+  .trending
+  {
+    font-size: 40px;
+
+  }
 /* ** END TRENDING SECTION  */
 
 .section-contact--homepage {
