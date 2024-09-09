@@ -6,16 +6,18 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 
 }
 
 :root {
-    --main-color: #785740;
-    --supporting-color: #FEECB3;
+    --main-color: #fff;
+    /* #0C0C0C; */
+    --supporting-color: #fc8019;
     --link-color: #755959;
-    --bg-color: #FABC3F;
-    --h-color: #003b99;
-    --mini-heading-color: #000a19;
+    --bg-color: #fff;
+    --h-color: #000;
+    --mini-heading-color: #000;
     --white-color: #fff;
     --para-color: #504e4d;
     --btn-hover-bg-color: #003b99;
@@ -57,12 +59,14 @@ header {
 }
 
 
-.container .logo {
-    width: 30rem;
+.container .logo img{
+    width: 4rem;
     height: auto;
     display: flex;
     align-items: left;
     margin: 0 2rem;
+   
+   
 }
 
 .container .logo .name1 {
@@ -85,7 +89,8 @@ header {
     display: flex;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
-    gap: 2rem;
+    gap: 4rem;
+
 }
 
 .section-navbar .container ul {
@@ -93,8 +98,10 @@ header {
     text-transform: uppercase;
     list-style: none;
     color: var(--supporting-color);
-
-
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-weight: 500;
+    
     & li a {
         position: relative;
         display: inline-block;
@@ -117,10 +124,76 @@ header {
 
 /* ** end NAVBAR SECTION** */
 
+
+/* * START OF VIDEO */
+.hero
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .content 
+{
+    text-align: center;
+   
+}
+.content h1{
+    font-size: 70px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+    &:hover
+    {
+
+        -webkit-text-stroke: 2px #fff;
+        color: transparent;
+    }
+} 
+.content .video-link{
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    color: #fff;
+    border: 2px solid white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-top: 50px;
+
+}
+.hero .back-video
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+}
+@media (min-aspect-ratio:16/9)
+{
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9)
+{
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+/* * END OF the VIDEO */
+
 /* *****START CONTENT AFTER NAVBAR */
 .small-header {
     width: 100%;
-
+margin:2rem 0;
     background-color: var(--bg-color);
     display: grid;
     place-items: center;
@@ -128,13 +201,13 @@ header {
 
     & h2 {
 
-        font-weight: 600; 
+        font-weight: 800; 
         font-family: Arvo, Georgia, Cambria, Times New Roman, Times, serif;
         font-style: normal;
-        word-spacing: 0.2rem;
+        word-spacing: 8px;
         padding: 14px;
         letter-spacing:0.1rem;
-        font-size: 1.6rem;
+        font-size: 2rem;
 
 
         & .link {
@@ -144,8 +217,8 @@ header {
             font-optical-sizing: auto;
             text-decoration: none;
             font-style: normal;
-            color: var(--link-color);
-            font-size: 1.8rem;
+            color: var(--supporting-color);
+            font-size: 2.4rem;
             border-bottom: 1px dotted var(--link-color) ;
             border-top: 1px dotted var(--link-color) ;
            
@@ -169,37 +242,50 @@ main .three-img
   display: grid;
   place-items: center;
   background-color: var(--supporting-color);
- 
+ margin: 6rem 0;
 }
 
 .images
 {
-    width: 60%;
+    width: 80%;
 }
 .images3
 {
     position:relative;
 }
 .three{
+    & .i1
+    {
+        width:300px;
+        height: 300px;
+    }
+    & .s{
+        font-family: Arvo, Georgia, Cambria, Times New Roman, Times, serif;
+        font-weight:500;
+        letter-spacing: 2px;
+    }
     & .s1
     {
         position: absolute;
-        left: 10%;
-        bottom: 7%;
+        font-size: 2rem;
+        left: 9%;
+        bottom: 3%;
         text-transform: capitalize;
     }
     & .s2
     {
         position: absolute;
+        font-size: 2rem;
         left:  47%;
-        bottom: 7%;
+        bottom: 3%;
         text-transform: capitalize;
     }
     & .s3
     {
         position: absolute;
-        left: 86%;
-        bottom: 7%;
+        font-size: 2rem;
+        left: 84%;
+        bottom: 3%;
         text-transform: capitalize;
     }
    
@@ -207,10 +293,11 @@ main .three-img
         
         position:absolute;
         content: "";
-        border-bottom: 2rem solid var(--bg-color);
+        border-bottom: 4rem solid var(--bg-color);
+        border-radius: 4px;
         width: 20%;
-        bottom: 6%;
-        left: 2.5%;
+        bottom: 2%;
+        left: 3.4%;
         
 
        
@@ -219,9 +306,10 @@ main .three-img
         
         position:absolute;
         content: "";
-        border-bottom: 2rem solid var(--bg-color);
+        border-bottom: 4rem solid var(--bg-color);
+        border-radius: 4px;
         width: 20%;
-        bottom: 6%;
+        bottom: 2%;
         left: 40%;
 
        
@@ -231,13 +319,16 @@ main .three-img
         
         position:absolute;
         content: "";
-        border-bottom: 2rem solid var(--bg-color);
+        border-bottom: 4rem solid var(--bg-color);
+        border-radius: 4px;
         width: 20%;
-        bottom: 6%;
-        left: 78%;
+        bottom: 2%;
+        left: 76.5%;
 
        
     }
+   
+   
 
 
 }
@@ -261,7 +352,20 @@ main .three-img
 }
 .categories .cat
 {
-    font-size:30px;
+    font-size:40px;
+    font-family: "Poppins", sans-serif;
+  font-weight:500;
+  font-style: normal;
+  letter-spacing: 2px;
+  /* background-color: var(--supporting-color); */
+  & .section-heading
+  {
+    
+    background-color: var(--supporting-color);
+    border-radius: 50px;
+  }
+
+
 }
 .categories .center-cat
 {
@@ -270,55 +374,101 @@ main .three-img
 .categories .center-cat .rounded-full
 {
     margin-bottom: 50px;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: all 0.5s ease-in-out;
+&:hover
+{
+     
+    box-shadow: 0 15px 20px rgb(251, 154, 63);
+}
     padding: 5px;
     &.c1::after
     {
-        content: "cat1";
+        content: "Non-Veg";
         position: absolute;
-        bottom:57% ;
-        left: 14.8%;
+        bottom:55% ;
+        left: 13.7%;
+       
         
     }
     &.c2::after
     {
-        content: "cat1";
+        content: "Veg";
         position: absolute;
-        bottom:57% ;
-        left:48%;
+        bottom:55% ;
+        left:49%;
         
     }
     &.c3::after
     {
-        content: "cat1";
+        content: "South-Indian";
         position: absolute;
-        bottom:57% ;
-        left: 82%;
+        bottom:55% ;
+        left: 79%;
         
     }
     &.c4::after
     {
-        content: "cat1";
+        content: "North-Indian";
         position: absolute;
-        bottom:5% ;
-        left: 14.8%;
+        bottom:4% ;
+        left: 12%;
         
     }
     &.c5::after
     {
-        content: "cat1";
+        content: "Biryani";
         position: absolute;
-        bottom:5% ;
+        bottom:4% ;
         left:48%;
         
     }
     &.c6::after
     {
-        content: "cat1";
+        content: "Snacks";
         position: absolute;
-        bottom:5% ;
-        left: 82%;
+        bottom:4% ;
+        left: 81%;
         
+    }
+    &.c1
+    {
+        background-image: url("../Images/nonveg.jpg");
+        background-size: cover;
+        
+    }
+    &.c2
+    {
+        background-image: url("../Images/nonveg.jpg");
+        background-size: cover;
+
+    }
+    &.c3
+    {
+        background-image: url("../Images/nonveg.jpg");
+        background-size: cover;
+
+    }
+    &.c4
+    {
+        background-image: url("../Images/nonveg.jpg");
+        background-size: cover;
+
+    }
+    &.c5
+    {
+        background-image: url("../Images/nonveg.jpg");
+        background-size: cover;
+
+    }
+    &.c6
+    {
+        background-image: url("../Images/nonveg.jpg");
+        background-size: cover;
+
     }
    
 
@@ -337,12 +487,122 @@ main .three-img
 }
 .container .section-heading
 {
-    margin-top: 60px;
-    font-size: 30px;
+    margin-top:13rem;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+
+ 
     
+}
+.container .trends
+{
+    margin: -8rem;
 }
 .container
 {
     width:80%;
 }
 /* ** END TRENDING SECTION  */
+
+.section-contact--homepage {
+    width: 60%;
+    height: 30rem;
+    margin: 0 auto;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-bottom: -10rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: -2rem;
+    z-index: 3;
+    background-color: var(--white-color);
+    margin-top: 40rem;
+}
+
+.section-contact--homepage .grid {
+   padding :3rem;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+
+}
+
+.contact-content p {
+    font-size: 2rem;
+    margin: 1.2rem 0 2.4rem 0;
+
+}
+
+.section-contact--homepage .contact-image img {
+    width: 60%;
+    height: auto;
+
+
+}
+
+.contact-content .btn a {
+    font-size: 1.8rem;
+    color: var(--white-color);
+    padding: 0;
+   
+
+}
+
+.section-contact--homepage i {
+    padding: 0rem;
+    margin-left: 1rem;
+    color: var(--white-color);
+
+}
+
+.contact-content .btn {
+    background-color: var(--h-color);
+    display: inline-block;
+    color: var(--white-color);
+    font-weight: 500;
+    padding: 1.2rem 3.2rem;
+    border-radius: 0.7rem;
+}
+
+
+/***** START OF FOOTER SECTION  */
+.foot
+{
+    width: 100%;
+     background-color: #353935;
+     color:#FEECB3;
+    margin-top: -10rem;
+    padding-top: 4rem;
+    
+}
+.foot .footer-1--div
+{
+    gap: 10px;
+}
+
+.foot .footer-1--div h3
+{
+    font-size: 20px;
+    padding-left: 4rem;
+    
+}
+.foot .fa-brands{
+    padding-top: 1.5rem;
+    font-size: 25px;
+    padding-left: 4rem;
+}
+
+
+.foot .footer-subheading
+{
+    font-size: 1.8rem;
+}
+
+
+.foot .footer-2--div li,.foot .footer-3--div li,.foot .footer-4--div li{
+    font-size: 1.4rem;
+    padding-bottom: 2px;
+}
+/***** END OF FOOTER SECTION  */
