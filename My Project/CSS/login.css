@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --main-color: #fff;
+    /* #0C0C0C; */
+    --supporting-color: #fc8019;
+    --link-color: #755959;
+    --bg-color: #fff;
+    --h-color: #000;
+    --mini-heading-color: #000;
+    --white-color: #fff;
+    --para-color: #504e4d;
+    --btn-hover-bg-color: #003b99;
+    --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --footer-bg-color: #040d12;
+    --background-color: #F5F5DC;
+}
+
+html {
+    font-size: 62.5%;
+   
+}
+body
+{
+    background-image: url("../Images/login.jpg");
+  
+}
+.login-container
+{
+    width: 50vw;
+
+    height:25vw;
+    text-align: center;
+}
+.login-container 
+{
+    font-family: "poppins";
+    & .login-head
+    {
+        & h1
+        {
+
+            font-size: 1.7rem;
+            letter-spacing: 1px;
+        }
+    }
+ & .form
+ {
+
+    margin-left:8rem ;
+ }
+
+
+ & .email
+ {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+ }
+ & .btn
+ {
+    font-size: 1.5rem;
+    align-items: center;
+    margin-left: 7rem;
+    margin-top: 3rem;
+    color: var(--white-color);
+    font-weight: 600;
+    background-color: var(--supporting-color);
+    transition: all 0.4sec ease-in-out;
+    & :hover
+    {
+         transform: scale(1.05);
+    }
+    
+    
+ }
+ .password
+ {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+ }
+/* background-image: url("../Images/login.jpg"); */
+}
+
+ 
