@@ -26,30 +26,35 @@
     --background-color: #F5F5DC;
 }
 
-html {
+html 
+{
     font-size: 62.5%;
-   
 }
 body
 {
-    background-image: url("../Images/login.jpg");
+    
+ 
+   /* background-color: #fc8019; */
+   background-image: linear-gradient(62deg, #6B8E23 0%, #6B8E23 100%);
   
 }
 .login-container
 {
+    
     width: 50vw;
-
     height:25vw;
     text-align: center;
+    background-color: var(--white-color);
 }
 .login-container 
 {
+    
     font-family: "poppins";
     & .login-head
     {
         & h1
         {
-
+            color: rgb(34, 33, 33); /* Text color for contrast */
             font-size: 1.7rem;
             letter-spacing: 1px;
         }
@@ -63,6 +68,7 @@ body
 
  & .email
  {
+    color: rgb(34, 33, 33);
     font-size: 1.5rem;
     margin-bottom: 4rem;
  }
@@ -83,12 +89,17 @@ body
     
     
  }
- .password
+ & .password
  {
+    color: rgb(34, 33, 33);
     margin-bottom: 2rem;
     font-size: 1.5rem;
  }
 /* background-image: url("../Images/login.jpg"); */
 }
-
+#password ,#mail
+{
+    color: #000;
+    font-weight: 200;
+}
  
