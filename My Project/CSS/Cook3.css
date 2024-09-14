@@ -340,11 +340,11 @@ main .three-img
 /* **** START OF CATEGORIES  */
 .categories
 {
-    background-color: #e4e2e2;
+    background-color: 	#F5F5DC;
 }
 .categories .cat-round
 {
-    width: 15rem;
+    width: 18rem;
     height: auto;
     aspect-ratio: 1;
     margin-bottom: 1rem;
@@ -385,11 +385,13 @@ main .cate-heading
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in;
 &:hover
 {
-     
-    box-shadow: 0 15px 20px rgb(251, 154, 63);
+        
+    box-shadow: 0 0  10px 10px rgb(251, 154, 63);
+    
+   
 }
     padding: 5px;
     &.c1::after
@@ -449,31 +451,31 @@ main .cate-heading
     }
     &.c2
     {
-        background-image: url("../Images/nonveg.jpg");
+        background-image: url("../Images/veg.avif");
         background-size: cover;
 
     }
     &.c3
     {
-        background-image: url("../Images/nonveg.jpg");
+        background-image: url("../Images/south.jpg");
         background-size: cover;
 
     }
     &.c4
     {
-        background-image: url("../Images/nonveg.jpg");
+        background-image: url("../Images/noth.jpg");
         background-size: cover;
 
     }
     &.c5
     {
-        background-image: url("../Images/nonveg.jpg");
+        background-image: url("../Images/biryani2.jpg");
         background-size: cover;
 
     }
     &.c6
     {
-        background-image: url("../Images/nonveg.jpg");
+        background-image: url("../Images/snacks.webp");
         background-size: cover;
 
     }
@@ -512,6 +514,7 @@ main .cate-heading
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     text-align: center;
+    margin-top: 8rem;
   }
   
   .card-image {
@@ -584,7 +587,7 @@ main .cate-heading
     bottom: -2rem;
     z-index: 3;
     background-color: var(--white-color);
-    margin-top: 40rem;
+    margin-top: 10rem;
 }
 
 .section-contact--homepage .grid {
@@ -610,7 +613,7 @@ main .cate-heading
 
 }
 
-.contact-content .btn a {
+.contact-content .btn5 a {
     font-size: 1.8rem;
     color: var(--white-color);
     padding: 0;
@@ -625,13 +628,18 @@ main .cate-heading
 
 }
 
-.contact-content .btn {
-    background-color: var(--h-color);
+.contact-content .btn5 {
+    background-color: var(--supporting-color);
     display: inline-block;
     color: var(--white-color);
     font-weight: 500;
     padding: 1.2rem 3.2rem;
     border-radius: 0.7rem;
+    transition: all 0.5s ease ease-in-out;
+    &:hover
+    {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
 }
 
 
