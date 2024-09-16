@@ -98,7 +98,7 @@ header {
 .section-navbar .container {
   display: grid;
   place-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
   width: 90%;
 
@@ -125,7 +125,7 @@ header {
 }
 
 .container .logo .name1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -144,12 +144,12 @@ header {
   display: flex;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
-  gap: 4rem;
+  gap: 3rem;
 
 }
 
 .section-navbar .container ul {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   list-style: none;
   color: var(--supporting-color);
@@ -164,7 +164,7 @@ header {
       &::before {
           content: "";
           position: absolute;
-          border-bottom: 0.35rem solid var(--supporting-color);
+          border-bottom: 0.15rem solid var(--supporting-color);
           bottom: -8px;
           width: 0%;
           left: 0;
