@@ -36,7 +36,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <header class="section-navbar">
         <div class="container">
-          <div class="logo py-2 flex ">
+          <div class="logo py-6 flex ">
            
            <img src="../Images/pngwing.com.png" alt="cook-logo" >
             <div class="name1 ">CookBook Corner </div> 
@@ -46,7 +46,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
           <nav class="navbar">
             <ul >
               <li class="nav-item "><a class="nav-link" href="../HTML/Cook3.html">home</a></li>
-              <li class="nav-item"><a class="nav-link" href="../HTML/Recipe3.html">recipes</a></li>
+              <li class="nav-item"><a class="nav-link" href="../HTML/categories.html">recipes</a></li>
               <li class="nav-item"><a class="nav-link" href="../HTML/Map3.html">map</a></li>
               <li class="nav-item"><a class="nav-link" href="../HTML/About3.html">about</a></li>
               <li class="nav-item"><a class="nav-link" href="../HTML/login.html">LOGIN</a></li>
@@ -60,15 +60,12 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <main class="page">
       <section class="recipes-container">
         <!-- tag container -->
-        <div class="tags-container border-2 p-2">
+        <div class="tags-container">
           <h4>recipes</h4>
           <div class="tags-list">
-            <a href="../HTML/veg.html">VEG </a>
-            <a href="../HTML/nonveg.html">NONVEG</a>
-            <a href="../HTML/veg.html">SOUTH INDIAN </a>
-            <a href="../HTML/nonveg.html">NORTH INDIAN</a>
-            <a href="../HTML/veg.html">DESSERTS </a>
-            <a href="../HTML/nonveg.html">SNACKS</a>
+            <a href="veg.html">VEG (1)</a>
+            <a href="nonveg.html">NONVEG (1)</a>
+
           </div>
         </div>
         <!-- end of tag container -->
@@ -78,26 +75,15 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
            <div class="recipeno border border-gray-400 px-3 py-4 hover:shadow-lg">
           <a href="pavbhaji.html" class="recipe">
             <img
-              src="../Images/../Images/BUTTERCHCKEN.jpg"
+              src="../Images/biryani.webp"
               class="img recipe-img"
               alt=""
             />
-            <h5>Butter Chicken</h5>
+            <h5>Biryani</h5>
             <p>Prep : 15min | Cook : 30min</p>
           </a>
         </div>
-        <div class="recipeno border border-gray-400 px-3 py-4 hover:shadow-lg">
-            <a href="../HTML/mutton.html" class="recipe">
-              <img
-                src="../Images/mutton.jpg"
-                class="img recipe-img"
-                alt=""
-              />
-              <h5>Mutton curry</h5>
-              <p>Prep : 20min | Cook : 30min</p>
-            </a>
-          </div>
-       
+          <!-- end of single recipe -->
                  </div>
       </section>
     </main>
@@ -105,9 +91,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- footer -->
     <footer class="page-footer">
       <p>
-        <span id="date"></span>
-        <span class="footer">Cookboook corner</span> 
-        
+        &copy; <span id="date"></span>
+        <span class="footer-logo">COOKBOOOK CORNER</span> 
       </p>
     </footer>
     <script src="../JavaScript/app.js"></script>
