@@ -288,3 +288,34 @@ header {
     padding-bottom: 2px;
 }
 /***** END OF FOOTER SECTION  */
+
+
+/* *** START OF MAP */
+.map-container
+{
+    position: relative;
+    width:600px;
+    height:800px;
+    margin: 0 auto;
+
+    & .india-map
+    {
+        width: 100%;
+        height:100%;
+    }
+    & .pin
+    {
+        position: absolute;
+        background-image: url("../Images/finalpin.png");
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        transform: translate(-50%,-100%);
+    }
+
+}
+
+
+/* * END OF A MAP */
