@@ -6,11 +6,25 @@
 /* fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
-html {
-  font-size: 100%;
-} /*16px*/
+
 
 :root {
+
+    --main-color: #fff;
+    /* #0C0C0C; */
+    --supporting-color: #fc8019;
+    --link-color: #755959;
+    --bg-color: #fff;
+    --h-color: #000;
+    --mini-heading-color: #000;
+    --white-color: #fff;
+    --para-color: #504e4d;
+    --btn-hover-bg-color: #003b99;
+    --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --footer-bg-color: #040d12;
+    --background-color: #F5F5DC;
+
+
   /* colors */
   --primary-100: #e2e0ff;
   --primary-200: #c1beff;
@@ -63,6 +77,110 @@ html {
   --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
+
+/* ***  NAV BAR START */
+html {
+  font-size: 100%;
+  
+}
+
+/* ***** NAV BAR SECTION */
+header {
+  background-color: var(--main-color);
+}
+
+.section-navbar {
+
+  width: 100%;
+
+}
+
+.section-navbar .container {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+
+
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+
+
+
+}
+
+
+.container .logo img{
+  width: 3rem;
+  height: auto;
+  display: flex;
+  align-items: left;
+  margin: 0 2rem;
+ 
+ 
+}
+
+.container .logo .name1 {
+  font-size: 2rem;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--supporting-color);
+  align-content: space-evenly;
+  text-align: justify;
+  padding-left: 1rem;
+
+
+
+}
+
+
+.section-navbar .container ul {
+  padding-top: 1rem;
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  gap: 4rem;
+
+}
+
+.section-navbar .container ul {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  list-style: none;
+  color: var(--supporting-color);
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-weight: 500;
+  
+  & li a {
+      position: relative;
+      display: inline-block;
+
+      &::before {
+          content: "";
+          position: absolute;
+          border-bottom: 0.35rem solid var(--supporting-color);
+          bottom: -8px;
+          width: 0%;
+          left: 0;
+          transition: all 0.4s ease-in-out;
+      }
+  }
+
+  & li a:hover::before {
+      width: 100%;
+  }
+}
+/* ** NAVBAR END */
+
+
+
+
 
 body {
   background: var(--backgroundColor);
