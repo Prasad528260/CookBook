@@ -364,6 +364,10 @@ Footer
 Recipes 
 ===============
 */
+.recipeno{
+  background-color: #ff9945;
+  border-radius: 8px;
+}
 
 .recipes-container {
   display: grid;
@@ -412,14 +416,16 @@ Recipes
   margin-bottom: 0;
   margin-top: 0.25rem;
   line-height: 1;
-  color: var(--grey-700);
+  color: rgb(54, 54, 54);
+  font-weight: bolder;
 }
 .recipe p {
   margin-bottom: 0;
   line-height: 1;
-  color: var(--grey-500);
+  color: rgb(73, 73, 73);
   margin-top: 0.5rem;
   letter-spacing: var(--letterSpacing);
+  font-weight: bold;
 }
 @media screen and (min-width: 576px) {
   .recipes-list {
