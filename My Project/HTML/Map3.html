@@ -60,22 +60,40 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
-<!-- *START OF MAP SECTION -->
 
-
-      <div class="map-container relative">
-
-        <img src="../Images/india.jpg" alt="image map of india" id="map" class="india-map">
-        <div class="pin" id="pin"></div>
-
-
-      </div>
-
-
-
-
-
-       <!-- * END OF MAP SECTION -->
+        <div class="map-container">
+            <svg id="india-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
+                <!-- Simplified path data for each state -->
+                <path id="jammu-kashmir" d="M100,50 L200,50 L200,150 L100,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="himachal-pradesh" d="M200,50 L300,50 L300,150 L200,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="punjab" d="M300,50 L400,50 L400,150 L300,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="haryana" d="M400,50 L500,50 L500,150 L400,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="delhi" d="M500,50 L600,50 L600,150 L500,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="uttarakhand" d="M600,50 L700,50 L700,150 L600,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="up" d="M700,50 L800,50 L800,150 L700,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="bihar" d="M800,50 L900,50 L900,150 L800,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="jharkhand" d="M900,50 L1000,50 L1000,150 L900,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="west-bengal" d="M1000,50 L1100,50 L1100,150 L1000,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="sikkim" d="M1100,50 L1200,50 L1200,150 L1100,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="arunachal-pradesh" d="M1200,50 L1300,50 L1300,150 L1200,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="nagaland" d="M1300,50 L1400,50 L1400,150 L1300,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="manipur" d="M1400,50 L1500,50 L1500,150 L1400,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="mizoram" d="M1500,50 L1600,50 L1600,150 L1500,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="tripura" d="M1600,50 L1700,50 L1700,150 L1600,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="meghalaya" d="M1700,50 L1800,50 L1800,150 L1700,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="assam" d="M1800,50 L1900,50 L1900,150 L1800,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="odisha" d="M1900,50 L2000,50 L2000,150 L1900,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="andhra-pradesh" d="M2000,50 L2100,50 L2100,150 L2000,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="telangana" d="M2100,50 L2200,50 L2200,150 L2100,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="karnataka" d="M2200,50 L2300,50 L2300,150 L2200,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="goa" d="M2300,50 L2400,50 L2400,150 L2300,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="maharashtra" d="M2400,50 L2500,50 L2500,150 L2400,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="gujarat" d="M2500,50 L2600,50 L2600,150 L2500,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+                <path id="rajasthan" d="M2600,50 L2700,50 L2700,150 L2600,150 Z" fill="#e0e0e0" stroke="#333" stroke-width="2" />
+            </svg>
+        </div>
+    
+    
 
 <div id="card-container"></div> 
 

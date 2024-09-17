@@ -101,6 +101,7 @@ header {
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
   width: 90%;
+  
 
 
 }
@@ -115,7 +116,7 @@ header {
 
 
 .container .logo img{
-  width: 3rem;
+  width: 2.5rem;
   height: auto;
   display: flex;
   align-items: left;
@@ -149,13 +150,14 @@ header {
 }
 
 .section-navbar .container ul {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   list-style: none;
   color: var(--supporting-color);
   letter-spacing: 2px;
   word-spacing: 3px;
-  font-weight: 500;
+  font-weight: 600;
+  
   
   & li a {
       position: relative;
@@ -386,7 +388,8 @@ Recipes
 }
 .tags-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3,1fr);
+  gap:
 }
 .tags-list a {
   text-transform: capitalize;
@@ -592,3 +595,4 @@ Recipe Template
 .nutrition-table td {
   color: #333;
 }
+
