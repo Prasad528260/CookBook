@@ -596,3 +596,20 @@ Recipe Template
   color: #333;
 }
 
+
+
+/* ** extras */
+
+.tags-list a
+{
+  padding-left: 1rem;
+  transition: all 0.3s ease-in-out;
+
+}
+.tags-list a.now
+{
+  background-color: var(--supporting-color);
+  color: var(--white);
+  border-radius: 10px;
+
+}
