@@ -327,6 +327,7 @@ Page
   width: 90vw;
   max-width: var(--max-width);
   margin: 0 auto;
+  background:linear-gradient(to right,#f8f8f8,#e6e6e6);
 }
 .page {
   padding-top: 2rem;
@@ -376,8 +377,17 @@ Recipes
 
 .recipes-list {
   display: grid;
-  gap: 2rem 1rem;
+  gap:2rem;
   padding-bottom: 3rem;
+  transition: all 2s ease-in-out;
+  & .recipeno
+  {
+    transition: all 0.5s ease-in-out;
+    &:hover{
+    transform: scale(1.06);
+    }
+  }
+
 }
 .tags-container {
   order: 1;
@@ -385,10 +395,17 @@ Recipes
   flex-direction: column;
   padding-bottom: 3rem;
   /* background: blue; */
+  margin-right: 1rem;
+
 }
 .tags-container h4 {
   margin-bottom: 0.5rem;
   font-weight: 500;
+  padding-left: 1rem;
+  background-color: var(--supporting-color);
+  color: white;
+  border-radius: 5px;
+  padding:1rem;
 }
 .tags-list {
   display: grid;
@@ -402,10 +419,13 @@ Recipes
   transition: var(--transition);
 }
 .tags-list a:hover {
-  color: var(--primary-500);
+  color: var(--white-color);
+  background-color: #FF8C5A;
+  border-radius: 10px;
 }
 .recipe {
   display: block;
+  
 }
 .recipe-img {
   height: 15rem;
@@ -443,6 +463,7 @@ Recipes
   }
   .recipes-list {
     grid-template-columns: 1fr 1fr;
+   
   }
 
   .recipe p {
@@ -612,19 +633,5 @@ Recipe Template
   transition: all 0.3s ease-in-out;
 
 }
-.tags-list a.now
-{
-  background-color: var(--supporting-color);
-  color: var(--white);
-  border-radius: 10px;
-
-}
 
 
-.recipe-info .bookmark
-{
-  &:hover
-  {
-    fill: #040d12;
-  }
-}
