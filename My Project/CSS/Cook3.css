@@ -430,7 +430,7 @@ main .cate-heading
     }
     &.c5::after
     {
-        content: "Biryani";
+        content: "Dessert";
         position: absolute;
         bottom:4% ;
         left:48%;
@@ -470,7 +470,7 @@ main .cate-heading
     }
     &.c5
     {
-        background-image: url("../Images/biryani2.jpg");
+        background-image: url("../Images/Dessert.webp");
         background-size: cover;
 
     }
