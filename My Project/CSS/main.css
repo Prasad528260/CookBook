@@ -633,5 +633,14 @@ Recipe Template
   transition: all 0.3s ease-in-out;
 
 }
-
-
+.recipe-hero .recipe-info .bookmark-icon
+{
+  padding-left: 0.7rem;
+  font-size: 2rem;
+  color: var(--supporting-color);
+  transition: all 0.5s ease-in-out;
+}
+.recipe-hero .recipe-info .bookmark-icon.active
+{
+  color:red;
+}
