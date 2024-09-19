@@ -85,3 +85,18 @@ button {
 button:hover {
     background-color: #d76b1f;
 }
+.review-section {
+    margin-top: 2rem;
+  }
+  
+  .review {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+  
+  .review h5 {
+    margin-bottom: 0.5rem;
+  }
+  

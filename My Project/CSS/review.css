@@ -1,0 +1,21 @@
+.review-section {
+    border-top: 2px solid #ddd;
+    margin-top: 3rem;
+    padding-top: 2rem;
+  }
+  
+  .review {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+  
+  .review strong {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .btn
+  {
+    background-color: #fc8019;
+  }

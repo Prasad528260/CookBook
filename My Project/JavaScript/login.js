@@ -16,10 +16,10 @@ signupBtn.addEventListener('click', () => {
     signupBtn.classList.add('active');
     loginBtn.classList.remove('active');
 });
-
+var username;
 function login(event) {
     event.preventDefault();
-    const username = document.getElementById('login-username').value;
+     username = document.getElementById('login-username').value;
     const password = document.getElementById('login-password').value;
 
     const storedUser = JSON.parse(localStorage.getItem('user'));
@@ -53,3 +53,5 @@ function signup(event) {
         alert('Please fill all fields');
     }
 }
+
+

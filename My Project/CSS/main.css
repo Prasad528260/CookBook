@@ -329,9 +329,12 @@ Page
   margin: 0 auto;
   background:linear-gradient(to right,#f8f8f8,#e6e6e6);
 }
-.page {
+.page2 {
   padding-top: 2rem;
   min-height: calc(100vh - (6rem + 4rem));
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 /*
 =============== 
@@ -644,3 +647,4 @@ Recipe Template
 {
   color:red;
 }
+
