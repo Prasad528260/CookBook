@@ -10,3 +10,4 @@ bookmarkIcon.addEventListener('click', function () {
     this.classList.toggle('far'); 
     this.classList.toggle('active'); 
 });
+
