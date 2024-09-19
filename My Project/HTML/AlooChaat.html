@@ -32,8 +32,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../CSS/review.css">
   </head>
   <body>
-    <!-- nav  -->
-    <header class="section-navbar">
+     <!-- nav  -->
+     <header class="section-navbar">
       <div class="container">
         <div class="logo py-6 flex ">
          
@@ -48,13 +48,14 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             <li class="nav-item"><a class="nav-link" href="../HTML/categories.html">recipes</a></li>
             <li class="nav-item"><a class="nav-link" href="../HTML/Map3.html">map</a></li>
             <li class="nav-item"><a class="nav-link" href="../HTML/login.html">LOGIN</a></li>
+            <li class="nav-item"><a class="nav-link" href="../HTML/saved.html">saved</a></li>
   
           </ul>
         </nav>
       </div>
     </header>
   <!-- end of nav -->
-    <main class="page2">
+    <main class="page">
       <div class="recipe-page">
         <section class="recipe-hero">
           <img
@@ -64,10 +65,11 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
           <article class="recipe-info">
             <h2 class="inline">Aloo Chaat </h2>
             <!-- *IOCN HERE -->
-            <div class="bookmark-icon inline">
+            <button onclick="saveRecipe('Aloo chaat', 'AlooChaat.html')"><div class="bookmark-icon inline">
              
               <i id="bookmarkIcon" class="far fa-bookmark bookmark"></i>
-          </div>
+          </div></button> 
+      
       
             <p>
                 Aloo chaat is a popular Indian street food made with boiled and fried potatoes, topped with a variety of chutneys, spices, and garnishes. It's a perfect blend of flavors, textures, and spices that make it a delightful snack or light meal.
@@ -216,6 +218,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
    
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="../JavaScript/all.js"></script>
+    <script src="../JavaScript/script.js"></script>
    
   </body>
 </html>
