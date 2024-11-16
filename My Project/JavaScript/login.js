@@ -55,3 +55,16 @@ function signup(event) {
 }
 
 
+function showForgotPassword() {
+    const username = prompt("Please enter your username:");
+    if (username) {
+        const storedUser = JSON.parse(localStorage.getItem('user'));
+
+        if (storedUser && storedUser.username === username) {
+            alert(`A password reset link has been sent to your registered email for username: ${username}.`);
+        } else {
+            alert('Username not found.');
+        }
+    }
+}
+
